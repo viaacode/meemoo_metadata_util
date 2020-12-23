@@ -132,6 +132,36 @@ datatypes = {
         ]
     },
 
+    "BRAND": {
+        "value_set": [
+            "BASF",
+            "Agfa",
+            "Scotch",
+            "Maxell",
+            "Philips",
+            "Shamrock",
+            "Onbekend",
+            "Andere",
+            "TDK",
+            "Fuji",
+            "Panasonic",
+            "Sony",
+            "PDM",
+            "Ampex",
+            "Ongekend",
+            "Gevaert",
+            "Grundig", "3M", "Siera", "Kca", 
+            "¨scotch", 
+            "Supertape", "Neufunk", "Sonor", "SM", "JVC", "Edison",
+            "Diamond", "Pathé", "SSCOTCH", "SONNOR", 
+            "Columbia", "Decca", "Olympia", "Polydor", "Parlophone", 
+            "Omega", "RCA", "Victory", "Odéon", "NIR-INR", 
+            "Ronnex", "HMV", "Mercury", "Linguaphone", "Kodak", 
+            "EMI", "Telefunken", "Verbatim", 
+            "Emtec", "Fnac", "Capitol", "Gramophone"
+        ]
+    },
+
     "FORMAT": {
         "value_set": [
             "ACC Audiocassette",
@@ -151,5 +181,15 @@ datatypes = {
             "WCL wax cylinder",
             "WRE wire recording"
         ]
+    },
+
+    "BARCODE_CARRIER":
+    {
+        "regex": r"^B[A-Z]{3}_[A-Z]{3}_\d{6}$"
+    },
+
+    "BARCODE_BOX":
+    {
+        "regex": r"^A[A-Z]{3}_[A-Z]{3}_\d{6}$"
     }
 }
