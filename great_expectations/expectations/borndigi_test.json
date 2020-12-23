@@ -5,42 +5,35 @@
     {
       "expectation_type": "expect_table_row_count_to_be_between",
       "kwargs": {
-        "max_value": 244174,
-        "min_value": 199779
+        "max_value": 550,
+        "min_value": 500
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
     },
     {
       "expectation_type": "expect_table_column_count_to_equal",
       "kwargs": {
-        "value": 5
+        "value": 10
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
     },
     {
-      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "expectation_type": "expect_table_columns_to_match_set",
       "kwargs": {
-        "column_list": [
+        "column_set": [
           "cp",
           "cp_id",
           "dc_identifier_localid",
+          "dc_title",
+          "dcterms_created",
+          "dcterms_issued",
           "dc_identifier_localids",
-          "dc_title"
+          "dc_titles",
+          "dc_rights_licenses",
+          "dc_subjects"
         ]
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
     },
     {
       "expectation_type": "expect_column_values_to_not_be_null",
@@ -48,11 +41,7 @@
         "column": "cp",
         "mostly": 0.894
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
     },
     {
       "expectation_type": "expect_column_distinct_values_to_be_in_set",
@@ -155,11 +144,7 @@
           "wpZimmer"
         ]
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
     },
     {
       "expectation_type": "expect_column_values_to_not_be_null",
@@ -167,11 +152,7 @@
         "column": "dc_identifier_localid",
         "mostly": 0.665
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
     },
     {
       "expectation_type": "expect_column_value_lengths_to_be_between",
@@ -179,11 +160,21 @@
         "column": "dc_identifier_localid",
         "min_value": 1
       },
-      "meta": {
-        "BasicSuiteBuilderProfiler": {
-          "confidence": "very low"
-        }
-      }
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "dc_title"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "dc_title"
+      },
+      "meta": {}
     }
   ],
   "meta": {
