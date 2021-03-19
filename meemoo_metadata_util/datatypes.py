@@ -61,6 +61,9 @@ datatypes = {
         "value_set": ["OK", "NOT OK"]
     },
 
+    "YES_NO": {
+        "value_set": ["y", "n"]
+    },
 
     "ASPECT_RATIO": {
         "regex": r"[0-9]+x[0-9]+$"
@@ -150,14 +153,14 @@ datatypes = {
             "Ampex",
             "Ongekend",
             "Gevaert",
-            "Grundig", "3M", "Siera", "Kca", 
-            "¨scotch", 
+            "Grundig", "3M", "Siera", "Kca",
+            "¨scotch",
             "Supertape", "Neufunk", "Sonor", "SM", "JVC", "Edison",
-            "Diamond", "Pathé", "SSCOTCH", "SONNOR", 
-            "Columbia", "Decca", "Olympia", "Polydor", "Parlophone", 
-            "Omega", "RCA", "Victory", "Odéon", "NIR-INR", 
-            "Ronnex", "HMV", "Mercury", "Linguaphone", "Kodak", 
-            "EMI", "Telefunken", "Verbatim", 
+            "Diamond", "Pathé", "SSCOTCH", "SONNOR",
+            "Columbia", "Decca", "Olympia", "Polydor", "Parlophone",
+            "Omega", "RCA", "Victory", "Odéon", "NIR-INR",
+            "Ronnex", "HMV", "Mercury", "Linguaphone", "Kodak",
+            "EMI", "Telefunken", "Verbatim",
             "Emtec", "Fnac", "Capitol", "Gramophone"
         ]
     },
@@ -191,5 +194,154 @@ datatypes = {
     "BARCODE_BOX":
     {
         "regex": r"^A[A-Z]{3}_[A-Z]{3}_\d{6}$"
+    },
+
+    "LOM_RESOURCE_TYPE":
+    {
+        "value_set": ["Video", "Audio"]
+    },
+
+    "LOM_CONTEXT":
+    {
+        "value_set": [
+            "Niet niveaugebonden",
+            "Kleuteronderwijs",
+            "Lager onderwijs",
+            "Secundair onderwijs",
+            "Volwassenenonderwijs",
+            "Hoger onderwijs"
+        ]
+    },
+
+    "LOM_AGE_RANGE": {
+        "value_set": [
+            "Lager 1ste graad",
+            "Lager 2de graad",
+            "Lager 3de graad",
+            "Secundair 1ste graad",
+            "Secundair 2de graad",
+            "Secundair 3de graad",
+        ]
+    },
+
+    "LOM_ENDUSER_ROLE": {
+        "value_set": [
+            "Docent",
+            "Student",
+            "Directie",
+            "ICT-coördinator",
+            "Systeembeheerder",
+            "Preventieadviseur",
+            "GOK / Zorgcoördinator",
+            "Pedagogisch begeleider",
+            "Inspectielid",
+            "Administratief Personeel",
+            "Met pensioen",
+            "Ouder",
+            "Ander"
+        ]
+    },
+
+    "LOM_CLASSIFICATION": {
+        "levensbeschouwing",
+        "lichamelijke opvoeding",
+        "muzische vorming",
+        "Nederlands",
+        "Nederlands vreemde taal - NT2",
+        "sociale vaardigheden",
+        "wetenschappen en techniek",
+        "mens en maatschappij",
+        "wiskunde",
+        "ICT",
+        "leren leren",
+        "economie - SEI - boekhouding - bedrijfsbeheer",
+        "handel - kantoor - verkoop",
+        "recht",
+        "informatica",
+        "beeldende kunsten - schilderkunst, beeldhouwkunst, bouwkunst",
+        "creatie - mode - kleding - juwelen",
+        "decoratieve technieken - decoratie",
+        "fotografie - video - film",
+        "grafische technieken",
+        "muzikale opvoeding - muziek",
+        "plastische opvoeding - tekenen",
+        "podiumkunsten - theater, ballet, dans",
+        "toerisme",
+        "gedragswetenschappen",
+        "cultuurwetenschappen",
+        "geschiedenis - archeologie",
+        "levensbeschouwing",
+        "media en communicatie",
+        "PAV - MAVO - GASV - ASPV",
+        "politieke en sociale wetenschappen - maatschappijleer",
+        "psychologie en pedagogie",
+        "wijsbegeerte en moraalwetenschappen",
+        "Frans",
+        "Engels",
+        "Duits",
+        "Spaans",
+        "Italiaans",
+        "Latijn",
+        "Oudgrieks",
+        "autotechniek",
+        "bouw - architectuur",
+        "elektriciteit - elektronica",
+        "glas - glastechnieken",
+        "hout",
+        "kapper",
+        "koeling en warmte",
+        "maritieme opleidingen",
+        "mechanica - pneumatica - hydraulica - meet- en regeltechnieken",
+        "metaal",
+        "techniek - technologische opvoeding",
+        "textiel",
+        "wetenschappelijk en technisch tekenen",
+        "natuurwetenschappen",
+        "aardrijkskunde",
+        "biologie",
+        "chemie",
+        "fysica",
+        "land- en tuinbouw",
+        "wiskunde",
+        "farmaceutische wetenschappen",
+        "genees - verpleeg - tandheel - kine - logopedie",
+        "lichamelijke opvoeding - sport",
+        "lichaamszorg - personenzorg",
+        "voeding",
+        "burgerzin",
+        "gezondheidseducatie",
+        "milieueducatie",
+    },
+
+    "GENRE":
+    {
+        "Actualiteit", 
+        "Animatie", 
+        "Concert", 
+        "Dans", 
+        "Docudrama", 
+        "Documentaire", 
+        "Documentatie", 
+        "Drama", 
+        "Educatief", 
+        "Entertainment", 
+        "Fictie", 
+        "Interview", 
+        "Komedie", 
+        "Kortfilm", 
+        "Kunstwerk", 
+        "Muziekopname", 
+        "Nieuws", 
+        "Non-fictie", 
+        "Opera", 
+        "Performance", 
+        "Speelfilm", 
+        "Sport", 
+        "Wetenschap"
+    },
+
+    "PID": {
+        "regex": r"[A-Za-z0-9]{10}\s?/g"
     }
+
 }
