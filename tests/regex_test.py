@@ -1,13 +1,13 @@
 import re
 import pytest
-import meemoo_metadata_util
+from meemoo_metadata_util import datatypes
 
 def get_testvalues(datatype, key):
     if key in datatype:
         return datatype[key]
     return []
 
-for name, datatype in meemoo_metadata_util.datatypes.items():
+for name, datatype in datatypes.items():
     if "regex" in datatype:
         my_regex = re.compile(datatype["regex"])
 
